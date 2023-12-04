@@ -11,7 +11,7 @@ st.header('LangoBot: Your Personal English Tutor')
 class Basic:
     def __init__(self):
         configure()
-        self.openai_model = "gpt-3.5-turbo"
+        self.openai_model = "gpt-4"
         self.placeholder = "Type your response here..."
         self.client = OpenAI(
             api_key=os.environ['OPENAI_API_KEY']
