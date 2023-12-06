@@ -111,6 +111,8 @@ class Basic:
                     st.button("Translate Assistant's Message", on_click=lambda: self.translate(final_response))  
                 with col2:
                     st.button("End the Conversation", on_click=lambda: self.evaluation()) 
+                if "conversation_ended" in st.session_state:
+                    return     
 
 if __name__ == "__main__":
     obj = Basic()
